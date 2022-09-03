@@ -19,8 +19,6 @@ public class MarketPriceListenerImpl implements MarketPriceListener {
     @Override
     public void onMessage(String message) {
         List<MarketPrice> marketPrices = marketPriceMapper.parseMarketPrices(message);
-        //Validate CSV String
-        //Convert CSV String to List of Entities
         //Enrich
         //Save(it can be H2 perhaps)
     }
