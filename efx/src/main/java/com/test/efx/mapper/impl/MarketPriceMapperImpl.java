@@ -4,6 +4,7 @@ import com.test.efx.entities.MarketPrice;
 import com.test.efx.mapper.MarketPriceMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class MarketPriceMapperImpl implements MarketPriceMapper {
@@ -16,6 +17,6 @@ public class MarketPriceMapperImpl implements MarketPriceMapper {
 
     @Override
     public List<MarketPrice> parseMarketPrices(String input) {
-        return null;
+        return new ArrayList<MarketPrice>();
     }
 }
